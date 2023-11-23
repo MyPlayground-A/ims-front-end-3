@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="border-bottom">
+        <div id="logo-container">
+            <h1 class="m-0"><i class="bi bi-mortarboard-fill"></i> IMS APP</h1>
+        </div>
+        <div id="bread-crumb-container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Teachers</li>
+                </ol>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <form id="form-container" class="p-3" action="#" method="post">
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>Teacher Details</h2>
+                <button id="btn-new-customer" type="button" class="btn btn-primary">+ NEW TEACHER</button>
+            </div>
+            <div class="mb-3">
+                <label for="txt-name" class="form-label mt-3">Name</label>
+                <input type="text" name="name" class="form-control" id="txt-name" placeholder="Eg: Kamal Perera">
+            </div>   
+            <div class="mb-3">
+                <label for="txt-address" class="form-label mt-3">Contact</label>
+                <input type="text" name="address" class="form-control" id="txt-address" placeholder="011-1234567">
+            </div>         
+            
+            <div class="d-flex gap-3 mt-3">
+                <div><button type="submit" class="btn btn-success">SAVE</button></div>
+                <div><button type="reset" class="btn btn-danger">CLEAR</button></div>
+            </div>
+            
+        </form>
+        <div id="table-container" class="p-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="txt-search" placeholder="Enter your query to search customers">
+                <label for="txt-search">Enter your query to search teachers</label>
+                <div>
+                    <table class="table table-bordered table-hover mt-2 rounded-1">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>CONTACT</th>
+                                <th class="d-flex justify-content-center">ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kasun Sampath</td>
+                                <td>011-1234567</td>
+                                <td class="d-flex justify-content-center">
+                                    <i class="bi bi-pencil-fill me-3" title="Edit"></i>
+                                    <i class="bi bi-trash3-fill" title="Delete"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <div class="pagination-container d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

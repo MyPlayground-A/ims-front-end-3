@@ -1,0 +1,1 @@
+{"mappings":"ACAA,wBAIA","sources":["index.25263df0.css","src/css/style.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\n:root {\n  font-family: Ubuntu, sans-serif;\n}\n\n/*# sourceMappingURL=index.25263df0.css.map */\n","* {\n    box-sizing: border-box;\n}\n\n:root {\n    font-family: 'Ubuntu', sans-serif;\n}"],"names":[],"version":3,"file":"index.25263df0.css.map"}

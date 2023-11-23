@@ -11,6 +11,9 @@ dependencies:
   bootstrap-icons:
     specifier: ^1.11.2
     version: 1.11.2
+  i:
+    specifier: ^0.3.7
+    version: 0.3.7
 
 devDependencies:
   parcel:
@@ -1419,6 +1422,11 @@ packages:
       domutils: 2.8.0
       entities: 3.0.1
     dev: true
+
+  /i@0.3.7:
+    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
+    engines: {node: '>=0.4'}
+    dev: false
 
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}

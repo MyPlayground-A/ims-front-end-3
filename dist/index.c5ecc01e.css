@@ -1,0 +1,53 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+main {
+  flex-direction: row;
+  display: flex;
+}
+
+#form-container {
+  flex-basis: 40%;
+  display: grid;
+}
+
+#table-container {
+  flex-basis: 60%;
+  display: grid;
+}
+
+#table-container table thead tr th:first-child, #table-container table tbody tr td:first-child {
+  text-align: center;
+}
+
+#table-container i[title="Edit"]:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+#table-container i[title="Delete"]:hover {
+  color: red;
+  cursor: pointer;
+}
+
+@media (width <= 991px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+@media (width >= 992px) and (width <= 1199px) {
+  #form-comtainer {
+    flex-basis: 45%;
+  }
+
+  #table-container {
+    flex-basis: 55%;
+  }
+}
+
+/*# sourceMappingURL=index.c5ecc01e.css.map */
