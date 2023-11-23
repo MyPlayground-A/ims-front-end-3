@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
+    <script type="module" src="js/teachers.js"></script>
 </head>
 <body>
     <header class="border-bottom">
@@ -28,7 +29,7 @@
         </div>
     </header>
     <main>
-        <form id="form-container" class="p-3" action="#" method="post">
+        <form id="form-container" class="p-3" method="post">
             <div class="d-flex align-items-center justify-content-between">
                 <h2>Teacher Details</h2>
                 <button id="btn-new-customer" type="button" class="btn btn-primary">+ NEW TEACHER</button>
@@ -39,11 +40,11 @@
             </div>   
             <div class="mb-3">
                 <label for="txt-address" class="form-label mt-3">Contact</label>
-                <input type="text" name="address" class="form-control" id="txt-address" placeholder="011-1234567">
+                <input type="text" name="address" class="form-control" id="txt-contact" placeholder="011-1234567">
             </div>         
             
             <div class="d-flex gap-3 mt-3">
-                <div><button type="submit" class="btn btn-success">SAVE</button></div>
+                <div><button id="btn-save" type="button" class="btn btn-success">SAVE</button></div>
                 <div><button type="reset" class="btn btn-danger">CLEAR</button></div>
             </div>
             
@@ -61,13 +62,13 @@
                                 <th class="d-flex justify-content-center">ACTION</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbl-body">
                             <tr>
-                                <td>Kasun Sampath</td>
-                                <td>011-1234567</td>
+                                <td id="td-name">Kasun Sampath</td>
+                                <td id="td-contact">011-1234567</td>
                                 <td class="d-flex justify-content-center">
-                                    <i class="bi bi-pencil-fill me-3" title="Edit"></i>
-                                    <i class="bi bi-trash3-fill" title="Delete"></i>
+                                    <i class="edit bi bi-pencil-fill me-3" title="Edit"></i>
+                                    <i class="delete bi bi-trash3-fill" title="Delete"></i>
                                 </td>
                             </tr>
                         </tbody>
